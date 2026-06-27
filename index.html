@@ -105,17 +105,12 @@
       padding-bottom: 5px;
     }
 
-    /* ITEM MENUS WITH COUNTER */
     .menu-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 15px;
       font-size: 13px;
-    }
-
-    .menu-item:last-child {
-      margin-bottom: 0;
     }
 
     .item-info {
@@ -135,7 +130,6 @@
       font-weight: 600;
     }
 
-    /* Counter Controls */
     .item-counter {
       display: flex;
       align-items: center;
@@ -176,7 +170,6 @@
       text-align: right;
     }
 
-    /* TOTAL FLOATING BAR */
     .total-bar {
       background: #fff0f3;
       margin: 10px 20px;
@@ -200,7 +193,6 @@
       color: var(--pink-dark);
     }
 
-    /* ACTION BUTTONS */
     .action-area {
       padding: 15px 20px 20px 20px;
       background: white;
@@ -224,10 +216,6 @@
       box-sizing: border-box;
     }
 
-    .btn:hover {
-      background: linear-gradient(45deg, #ff5c8a, #ff85a2);
-    }
-
     footer {
       text-align: center;
       padding: 15px;
@@ -240,7 +228,6 @@
 <body>
 
   <div class="app-container">
-    
     <header>
       <div class="logo-container">
         <h1>DIARY.NAILS.CHU</h1>
@@ -253,11 +240,10 @@
     </div>
 
     <div class="content">
-      
       <div class="category-box">
-        <h2 class="category-title">💅 Nail Services (Per Jari)</h2>
+        <h2 class="category-title">💅 Nail Services</h2>
         
-        <!-- ITEM 1 -->
+        <!-- List Item -->
         <div class="menu-item" data-name="Nail Gel (Tangan)" data-price="4000">
           <div class="item-info">
             <span class="item-name">Nail Gel (Tangan)</span>
@@ -271,7 +257,6 @@
           <span class="item-total">Rp 0</span>
         </div>
 
-        <!-- ITEM 2 -->
         <div class="menu-item" data-name="Nail Gel (Kaki)" data-price="4500">
           <div class="item-info">
             <span class="item-name">Nail Gel (Kaki)</span>
@@ -285,7 +270,7 @@
           <span class="item-total">Rp 0</span>
         </div>
 
-        <!-- ITEM 3 -->
+        <!-- Tambahkan item lainnya dengan pola yang sama -->
         <div class="menu-item" data-name="Soft Gel Tip" data-price="2000">
           <div class="item-info">
             <span class="item-name">Soft Gel Tip</span>
@@ -298,200 +283,14 @@
           </div>
           <span class="item-total">Rp 0</span>
         </div>
-
-        <!-- ITEM 4 -->
-        <div class="menu-item" data-name="Cat Eye" data-price="5000">
-          <div class="item-info">
-            <span class="item-name">Cat Eye</span>
-            <span class="item-price">Rp 5.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 5 -->
-        <div class="menu-item" data-name="French" data-price="3000">
-          <div class="item-info">
-            <span class="item-name">French</span>
-            <span class="item-price">Rp 3.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 6 -->
-        <div class="menu-item" data-name="Chrome" data-price="2000">
-          <div class="item-info">
-            <span class="item-name">Chrome</span>
-            <span class="item-price">Rp 2.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 7 -->
-        <div class="menu-item" data-name="Full Chrome" data-price="3000">
-          <div class="item-info">
-            <span class="item-name">Full Chrome</span>
-            <span class="item-price">Rp 3.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 8 (Diambil batas bawah 2k) -->
-        <div class="menu-item" data-name="3D Desain" data-price="2000">
-          <div class="item-info">
-            <span class="item-name">3D Desain</span>
-            <span class="item-price">Rp 2k-5k</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 9 (Diambil batas bawah 3k) -->
-        <div class="menu-item" data-name="Painting Desain" data-price="3000">
-          <div class="item-info">
-            <span class="item-name">Painting Desain</span>
-            <span class="item-price">Rp 3k-6k</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 10 -->
-        <div class="menu-item" data-name="Marbel" data-price="5000">
-          <div class="item-info">
-            <span class="item-name">Marbel</span>
-            <span class="item-price">Rp 5.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 11 (Diambil batas bawah 2k) -->
-        <div class="menu-item" data-name="Acessories" data-price="2000">
-          <div class="item-info">
-            <span class="item-name">Acessories</span>
-            <span class="item-price">Rp 2k-10k</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 12 -->
-        <div class="menu-item" data-name="Stiker" data-price="1000">
-          <div class="item-info">
-            <span class="item-name">Stiker</span>
-            <span class="item-price">Rp 1.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 13 -->
-        <div class="menu-item" data-name="Overlay" data-price="3000">
-          <div class="item-info">
-            <span class="item-name">Overlay</span>
-            <span class="item-price">Rp 3.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 14 -->
-        <div class="menu-item" data-name="Ombre" data-price="4000">
-          <div class="item-info">
-            <span class="item-name">Ombre</span>
-            <span class="item-price">Rp 4.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 15 -->
-        <div class="menu-item" data-name="Remove Soft Gel" data-price="2500">
-          <div class="item-info">
-            <span class="item-name">Remove Soft Gel</span>
-            <span class="item-price">Rp 2.500</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
-        <!-- ITEM 16 -->
-        <div class="menu-item" data-name="Remove Gel Polish" data-price="2000">
-          <div class="item-info">
-            <span class="item-name">Remove Gel Polish</span>
-            <span class="item-price">Rp 2.000</span>
-          </div>
-          <div class="item-counter">
-            <button class="counter-btn minus">-</button>
-            <span class="counter-value">0</span>
-            <button class="counter-btn plus">+</button>
-          </div>
-          <span class="item-total">Rp 0</span>
-        </div>
-
       </div>
-
     </div>
 
-    <!-- Ringkasan Total Harga -->
     <div class="total-bar">
       <span class="total-title">Total Estimasi:</span>
       <span class="total-price" id="grand-total">Rp 0</span>
     </div>
 
-    <!-- Tombol Booking WhatsApp -->
     <div class="action-area">
       <button class="btn" id="btn-booking">Book Via WhatsApp 💖</button>
     </div>
@@ -499,7 +298,6 @@
     <footer>
       ✨ Jl Cempaka 16 Selayang II • @diary.nails.chu ✨
     </footer>
-
   </div>
 
   <script>
@@ -509,16 +307,13 @@
 
     function updateTotals() {
       let grandTotal = 0;
-
       menuItems.forEach(item => {
         const price = parseInt(item.getAttribute('data-price'));
         const count = parseInt(item.querySelector('.counter-value').innerText);
         const totalItemPrice = price * count;
-        
         grandTotal += totalItemPrice;
         item.querySelector('.item-total').innerText = 'Rp ' + totalItemPrice.toLocaleString('id-ID');
       });
-
       grandTotalEl.innerText = 'Rp ' + grandTotal.toLocaleString('id-ID');
     }
 
@@ -529,7 +324,7 @@
 
       plusBtn.addEventListener('click', () => {
         let count = parseInt(counterVal.innerText);
-        if(count < 10) { // maksimal 10 jari
+        if(count < 10) {
           counterVal.innerText = count + 1;
           updateTotals();
         }
@@ -545,17 +340,16 @@
     });
 
     btnBooking.addEventListener('click', () => {
-      let waNumber = "6283854705864"; // Nomor dari gambar kartunya
-      let message = "Halo Kak Admin Diary Nails Chu! 💕\n\nSaya mau pesan nail art dengan rincian berikut:\n";
+      let waNumber = "6283854705864";
+      let message = `Halo Kak Admin Diary Nails Chu! 💕\n\nSaya mau pesan nail art dengan rincian berikut:\n`;
       let adaPesanan = false;
       let totalAkhir = grandTotalEl.innerText;
 
       menuItems.forEach(item => {
         const name = item.getAttribute('data-name');
         const count = item.querySelector('.counter-value').innerText;
-        
         if (parseInt(count) > 0) {
-          message += - ${name}: ${count} Jari\n;
+          message += `- ${name}: ${count} Jari\n`;
           adaPesanan = true;
         }
       });
@@ -565,10 +359,9 @@
         return;
       }
 
-      message += \n*Estimasi Total:* ${totalAkhir}\n\nApakah ada slot kosong untuk saya? 🥰;
+      message += `\n*Estimasi Total:* ${totalAkhir}\n\nApakah ada slot kosong untuk saya? 🥰`;
       
-      // Kirim data ter-encode otomatis ke WhatsApp API
-      let waUrl = https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(message)};
+      let waUrl = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(message)}`;
       window.open(waUrl, '_blank');
     });
   </script>
